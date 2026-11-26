@@ -1,0 +1,13 @@
+{
+  "model": "gpt-6.2-sol",
+  "reasoning_effort": "high",
+  "layout": "side_by_side",
+  "part_types": [
+    "white-and-red wrapped cookie",
+    "dark-brown wrapped cookie with a cream label"
+  ],
+  "belt_speed_m_s": 0.05,
+  "reason": "The frames show two tan receiving boxes beside the conveyor on the arm pedestal\u2019s side. The arm reaches over the belt to pick, then retracts toward the boxes to place. For the MuJoCo reproduction, keep both bins within that sweep and use blue for the white-and-red cookies and yellow for the dark cookies. Start the physically moving belt at 0.05 m/s and let friction carry the parts. At each index, hold the belt still for two observations from the fixed overhead camera and a contact-based gripper pickup.",
+  "control": "index_and_pick",
+  "camera": "overhead_workspace"
+}
